@@ -1,6 +1,7 @@
 {
   "name": "render-agentkit-hacker-news-agent",
   "private": true,
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "pnpm -r dev",
     "build": "pnpm -r build",
@@ -8,5 +9,10 @@
   },
   "devDependencies": {
     "typescript": "^5"
+  },
+  "pnpm": {
+    "overrides": {
+      "zod": "^3.25.0"
+    }
   }
 }

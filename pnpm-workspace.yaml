@@ -1,2 +1,6 @@
 packages:
   - "packages/*"
+allowBuilds:
+  openai-zod-to-json-schema: true
+  protobufjs: true
+  sharp: true
