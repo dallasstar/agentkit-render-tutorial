@@ -5,7 +5,6 @@ import {
   createAgent,
   createNetwork,
   createTool,
-  getDefaultRoutingAgent,
   openai,
 } from "@inngest/agent-kit";
 
@@ -261,7 +260,7 @@ export const hackerNewsAgent = inngest.createFunction(
         ) {
           return summarizerAgent;
         }
-        return getDefaultRoutingAgent();
+        return searchAgent;
       },
     });
 
