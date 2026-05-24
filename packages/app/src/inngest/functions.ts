@@ -56,7 +56,10 @@ export const hackerNewsAgent = inngest.createFunction(
     }
 
     console.info("[HackerNewsAgent] Creating OpenAI model and agents");
-    const model = openai({ model: "gpt-4" });
+    const model = openai({
+      model: "gpt-4o",
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
     const summarizerAgent = createAgent({
       name: "Summarizer Agent",
