@@ -8,11 +8,11 @@
     "lint": "pnpm -r lint"
   },
   "devDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.8.0"
   },
   "pnpm": {
     "overrides": {
-      "zod": "^3.25.0"
+      "zod": "^4.0.0"
     }
   }
 }
